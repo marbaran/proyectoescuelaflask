@@ -1,5 +1,3 @@
-# from email.mime import image
-# from tkinter import image_names
 from flask import Flask ,jsonify,request
 from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
@@ -7,9 +5,9 @@ from flask_marshmallow import Marshmallow
 app=Flask(__name__)
 CORS(app)
 # configuro la base de datos, con el nombre el usuario y la clave
-app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://sql10507576:pejJiFNmqt@sql10.freesqldatabase.com/sql10507576'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://marbara:11Mar1967=@db4free.net/marcelo1967'
 # app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:root@localhost/flaskmysql'
-#                                               user:clave@localhost/nombreBaseDatos
+#                                                 user:clave@localhost/nombreBaseDatos
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False
 db= SQLAlchemy(app)
 ma=Marshmallow(app)
